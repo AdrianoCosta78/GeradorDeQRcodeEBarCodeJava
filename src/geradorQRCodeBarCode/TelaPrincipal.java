@@ -1,19 +1,19 @@
 package geradorQRCodeBarCode;
 
-import java.awt.Color;//
+import java.awt.Color;
 import java.awt.EventQueue;
-import java.awt.event.ActionEvent;//
-import java.awt.event.ActionListener;//
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-import javax.swing.ImageIcon;//
-import javax.swing.JButton;//
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JLabel;//
-import javax.swing.JOptionPane;//
-import javax.swing.JPanel;//
-import javax.swing.JTextField;//
-import javax.swing.border.EmptyBorder;//
-import javax.swing.border.LineBorder;//
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.border.EmptyBorder;
+import javax.swing.border.LineBorder;
 
 import metodos.MetodosQRCodeBarCode;
 
@@ -21,9 +21,7 @@ import metodos.MetodosQRCodeBarCode;
 
 public class TelaPrincipal extends JFrame {
 
-	/**
-	 * 
-	 */
+	
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JTextField txtCampo;
@@ -31,9 +29,6 @@ public class TelaPrincipal extends JFrame {
 	private JButton btnBarCode;
 	private JButton btnQRCode;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -47,9 +42,6 @@ public class TelaPrincipal extends JFrame {
 		});
 	}
 
-	/**
-	 * Create the frame.
-	 */
 	public TelaPrincipal() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
@@ -68,8 +60,8 @@ public class TelaPrincipal extends JFrame {
 		btnQRCode.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-				do_ButtonQRCode_actionPerformed(e);//b
-				//do_buttonQRCode_actionPerformed(e);
+				do_ButtonQRCode_actionPerformed(e);
+				
 
 			}
 
@@ -81,8 +73,8 @@ public class TelaPrincipal extends JFrame {
 		btnBarCode.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-				do_ButtonBarCode_actionPerformed(e);//b
-				//do_buttonBarCode_actionPerformed(e);
+				do_ButtonBarCode_actionPerformed(e);
+			
 			}
 		});
 		btnBarCode.setBounds(254, 45, 89, 26);
